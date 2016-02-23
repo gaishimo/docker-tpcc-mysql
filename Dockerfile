@@ -42,5 +42,4 @@ ENV PATH /opt/tpcc-mysql:$PATH
 WORKDIR /opt/tpcc-mysql
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
-COPY _test.sh /opt/tpcc-mysql/_test.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
